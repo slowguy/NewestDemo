@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.remote.newestdemo.widget.MyTextView
+        android:id="@+id/center_text"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#2f00"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:padding="15dp"
+        android:text="action"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/action"
+        android:background="#9f9f">
+
+        <TextView
+            android:id="@+id/aa"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="contentA"/>
+
+        <TextView
+            android:id="@+id/bb"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/aa"
+            android:background="#200f"
+            android:gravity="center"
+            android:visibility="visible"
+            android:text="contentB"/>
+
+        <TextView
+            android:id="@+id/cc"
+            android:layout_width="88dp"
+            android:background="#20f0"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/bb"
+            android:gravity="center"
+            android:text="contentC"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
